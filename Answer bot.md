@@ -1,4 +1,16 @@
+import discord
+from discord.ext import commands
+from discord.ext.commands import bot
 
+TOKEN='NTc0NTE3NzY5Mzk2MTU4NDg0.XNZmWQ.rD23FsagFTzHG-WW3LJHuGK7jII'
+
+client = commands.Bot(commands_prefix='$')
+
+@client.event
+async def on_ready():
+	print('Bot is Online')
+	
+client.run(TOKEN)
 
 
 const Discord = required ('discord.js');
